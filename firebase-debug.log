@@ -1,0 +1,166 @@
+[debug] [2020-12-26T08:45:58.691Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:45:58.693Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\priya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-26T08:45:58.693Z] CLI Version:   9.1.0
+[debug] [2020-12-26T08:45:58.693Z] Platform:      win32
+[debug] [2020-12-26T08:45:58.693Z] Node Version:  v14.15.0
+[debug] [2020-12-26T08:45:58.694Z] Time:          Sat Dec 26 2020 14:15:58 GMT+0530 (India Standard Time)
+[debug] [2020-12-26T08:45:58.694Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:45:58.694Z] 
+[debug] [2020-12-26T08:45:58.700Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-26T08:45:58.701Z] > authorizing via signed-in user
+[debug] [2020-12-26T08:45:58.701Z] [iam] checking project organic-shop-ceb64 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-26T08:45:58.704Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-26T08:45:58.704Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-26T08:46:00.599Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 26 Dec 2020 08:46:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:46:00.612Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-shop-ceb64:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-26T08:46:02.321Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:46:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1200","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:46:02.324Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-shop-ceb64  
+ 
+[debug] [2020-12-26T08:46:02.961Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:46:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'organic-shop-ceb64'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-26T08:46:02.975Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/organic-shop-ceb64/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-26T08:46:24.500Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-12-26T08:46:32.020Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:46:32.022Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\priya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-26T08:46:32.022Z] CLI Version:   9.1.0
+[debug] [2020-12-26T08:46:32.023Z] Platform:      win32
+[debug] [2020-12-26T08:46:32.023Z] Node Version:  v14.15.0
+[debug] [2020-12-26T08:46:32.023Z] Time:          Sat Dec 26 2020 14:16:32 GMT+0530 (India Standard Time)
+[debug] [2020-12-26T08:46:32.024Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:46:32.024Z] 
+[debug] [2020-12-26T08:46:32.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-26T08:46:32.030Z] > authorizing via signed-in user
+[debug] [2020-12-26T08:46:32.030Z] [iam] checking project organic-shop-ceb64 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-26T08:46:32.033Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-shop-ceb64:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-26T08:46:33.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:46:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1221","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:46:33.512Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-shop-ceb64  
+ 
+[debug] [2020-12-26T08:46:34.002Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:46:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'organic-shop-ceb64'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-26T08:46:34.016Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/organic-shop-ceb64/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-26T08:46:55.365Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-12-26T08:47:04.359Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:47:04.360Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\priya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-26T08:47:04.360Z] CLI Version:   9.1.0
+[debug] [2020-12-26T08:47:04.361Z] Platform:      win32
+[debug] [2020-12-26T08:47:04.361Z] Node Version:  v14.15.0
+[debug] [2020-12-26T08:47:04.362Z] Time:          Sat Dec 26 2020 14:17:04 GMT+0530 (India Standard Time)
+[debug] [2020-12-26T08:47:04.362Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:47:04.362Z] 
+[debug] [2020-12-26T08:47:04.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-26T08:47:04.368Z] > authorizing via signed-in user
+[debug] [2020-12-26T08:47:04.368Z] [iam] checking project organic-shop-ceb64 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-26T08:47:04.371Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-shop-ceb64:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-26T08:47:06.008Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:47:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1231","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:47:06.009Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-shop-ceb64  
+ 
+[debug] [2020-12-26T08:47:06.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:47:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'organic-shop-ceb64'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-26T08:47:06.526Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/organic-shop-ceb64/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-26T08:47:28.869Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-12-26T08:47:48.911Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:47:48.912Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\priya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-26T08:47:48.913Z] CLI Version:   9.1.0
+[debug] [2020-12-26T08:47:48.913Z] Platform:      win32
+[debug] [2020-12-26T08:47:48.913Z] Node Version:  v14.15.0
+[debug] [2020-12-26T08:47:48.914Z] Time:          Sat Dec 26 2020 14:17:48 GMT+0530 (India Standard Time)
+[debug] [2020-12-26T08:47:48.914Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:47:48.914Z] 
+[debug] [2020-12-26T08:47:48.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-26T08:47:48.920Z] > authorizing via signed-in user
+[debug] [2020-12-26T08:47:48.921Z] [iam] checking project organic-shop-ceb64 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-26T08:47:48.923Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-shop-ceb64:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-26T08:47:50.491Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:47:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1204","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:47:50.493Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-shop-ceb64  
+ 
+[debug] [2020-12-26T08:47:51.122Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:47:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'organic-shop-ceb64'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-26T08:47:51.135Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/organic-shop-ceb64/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-26T08:48:12.468Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-12-26T08:48:41.893Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:48:41.895Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\priya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-26T08:48:41.895Z] CLI Version:   9.1.0
+[debug] [2020-12-26T08:48:41.895Z] Platform:      win32
+[debug] [2020-12-26T08:48:41.895Z] Node Version:  v14.15.0
+[debug] [2020-12-26T08:48:41.896Z] Time:          Sat Dec 26 2020 14:18:41 GMT+0530 (India Standard Time)
+[debug] [2020-12-26T08:48:41.896Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:48:41.896Z] 
+[debug] [2020-12-26T08:48:41.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-26T08:48:41.903Z] > authorizing via signed-in user
+[debug] [2020-12-26T08:48:41.903Z] [iam] checking project organic-shop-ceb64 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-26T08:48:41.906Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-shop-ceb64:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-26T08:48:43.498Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:48:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1248","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:48:43.499Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-shop-ceb64  
+ 
+[debug] [2020-12-26T08:48:44.277Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:48:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'organic-shop-ceb64'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-26T08:48:44.295Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/organic-shop-ceb64/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-26T08:49:05.840Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443
+[debug] [2020-12-26T08:49:54.805Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:49:54.807Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\priya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-26T08:49:54.807Z] CLI Version:   9.1.0
+[debug] [2020-12-26T08:49:54.807Z] Platform:      win32
+[debug] [2020-12-26T08:49:54.807Z] Node Version:  v14.15.0
+[debug] [2020-12-26T08:49:54.808Z] Time:          Sat Dec 26 2020 14:19:54 GMT+0530 (India Standard Time)
+[debug] [2020-12-26T08:49:54.808Z] ----------------------------------------------------------------------
+[debug] [2020-12-26T08:49:54.808Z] 
+[debug] [2020-12-26T08:49:54.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-26T08:49:54.815Z] > authorizing via signed-in user
+[debug] [2020-12-26T08:49:54.815Z] [iam] checking project organic-shop-ceb64 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-26T08:49:54.817Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-shop-ceb64:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-26T08:49:56.324Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:49:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1235","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-26T08:49:56.326Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-shop-ceb64  
+ 
+[debug] [2020-12-26T08:49:56.882Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Dec 2020 08:49:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'organic-shop-ceb64'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-26T08:49:56.888Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/organic-shop-ceb64/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-26T08:50:18.314Z] Error: connect ETIMEDOUT 216.58.200.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.138:443

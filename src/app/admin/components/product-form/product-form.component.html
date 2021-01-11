@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-6">
+        <form #f="ngForm" (submit)="save(f.value)">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input #title="ngModel" [(ngModel)]="product.title" name="title" type="text" id="title" class="form-control" required>
+                <div class="alert alert-danger" *ngIf="title.touched && title.invalid">
+                    Enter product title
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <div class="input-group">
+                    <span class="input-group-text"> $ </span>
+                    <input #price="ngModel" [(ngModel)]="product.price" name="price" type="number" id="price" class="form-control" required
+                        [min]="1">
+                </div>
+                <div class="alert alert-danger" *ngIf="price.touched && price.invalid">
+                    <div *ngIf="price.errors.required">
+                        Enter product price
+                    </div>
+                    <div *ngIf="price.errors.min">
+                        Enter product minimum price
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select #category="ngModel" id="category" class="form-control" [(ngModel)]="product.category" name="category" required>
+                    <option value=""></option>
+                    <!-- Firebase have $key for every object, it is the unique identifier  -->
+                    <option *ngFor="let c of categories$ | async" [value]="c.key">{{c.name}}</option>
+                </select>
+                <div class="alert alert-danger" *ngIf="category.touched && category.invalid">
+                    Enter product category
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Image URL</label>
+                <input #imageUrl="ngModel" type="text" id="imageUrl" class="form-control" [(ngModel)]="product.imageUrl" name="imageUrl"
+                    required url>
+                <div class="alert alert-danger" *ngIf="imageUrl.touched && imageUrl.invalid">
+                    <div *ngIf="imageUrl.errors.required">
+                        Enter product imageUrl
+                    </div>
+                    <div *ngIf="imageUrl.errors.url">
+                        Enter product correct URL
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary">Save</button>
+            <!-- default type="submit" thats why it submits the form when you click button, 
+            so change to type="button" so that after deletion it will not submit the form by calling ngForm submit -->
+            <button type="button" (click)="delete()" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <product-card  [product]="product" [show-actions]="false"></product-card>
+    </div>
+
+</div>

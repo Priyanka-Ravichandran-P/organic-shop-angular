@@ -1,0 +1,24 @@
+<p>
+    <a routerLink="/admin/products/new" class="btn btn-primary">New Product</a>
+</p>
+<input #query (keyup)="filter(query.value)"
+id="search" type="text" class="form-control" placeholder="Search...">
+<br>
+<ag-grid-angular
+    style="width: 50%;"
+    domLayout='autoHeight'
+    class="ag-theme-alpine"
+    [pagination]="true"
+    [paginationPageSize]="paginationPageSize"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">
+</ag-grid-angular>
+<!-- <div class="example-header">
+  Page Size:
+  <select #pageSize (change)="onPageSizeChanged(pageSize)" id="page-size" [(ngModel)] ="page-size" name= "page-size">
+    <option value="10" selected="">10</option>
+    <option value="100">100</option>
+    <option value="500">500</option>
+    <option value="1000">1000</option>
+  </select>
+</div> -->
